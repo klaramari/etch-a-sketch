@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", makeRectangles(16, "darker"));
+document.addEventListener("DOMContentLoaded", makeRectangles(16, "black"));
 
 function makeRectangles(side, color){
     let cont;
@@ -65,7 +65,8 @@ function changeRectangles (){
     } while (side > 100 || !Number(side));
     let color;
    
-    color = prompt("Which color to paint?");
+    color = prompt("Which color to paint? Type the name of a color or type 'Random' for random colors. You can also type 'Darker' to have a color gradient.");
+    color = color.toLowerCase();
     makeRectangles(side, color);
 };
 
